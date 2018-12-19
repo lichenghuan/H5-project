@@ -1,0 +1,194 @@
+// 全局less
+/*
+**间隙类
+*/
+
+.mar-both {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mar15 {
+  margin: 15px;
+}
+
+.mar10 {
+  margin: 10px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.space {
+  margin-bottom: 10px;
+}
+
+/* ******************************************************************* */
+
+/*
+**边框类
+*/
+
+@bColor: #D5D5D5;
+.border {
+  border: 1px solid @bColor;
+}
+
+.border-bottom {
+  border-bottom: 1px solid @bColor;
+}
+
+.border-top {
+  border-top: 1px solid @bColor;
+}
+
+.border-left {
+  border-left: 1px solid @bColor;
+}
+
+.border-right {
+  border-right: 1px solid @bColor;
+}
+
+/* ******************************************************************* */
+
+/*
+**布局类
+*/
+
+.ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//元素横向 && 纵向居中
+.transCenter() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//元素横向居中
+.transverse() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//元素纵向居中
+.transVer() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//清除浮动
+.clearfix {
+  display: block;
+  zoom: 1;
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.flex {
+  overflow: hidden;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+// ------------------------------------------------
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f1f2f3;
+  font-size: 15px;
+  color: #343434;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img.align-center {
+  clear: both;
+  display: block;
+  margin: 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+input {
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+// 重写input
+input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  font-size: 14px;
+}
+
+// vux-1px
+div.vux-1px:before,
+div.vux-1px-t:before,
+div.vux-1px-l:before,
+div.vux-1px-b:after,
+div.vux-1px-tb:after,
+div.vux-1px-tb:before,
+div.weui-cell:before {
+  border-color: #eef0f4;
+  border-color: #ebebeb;
+  color: #eef0f4;
+}
+
+div.not-1px-t::before,
+div.vux-cell-box:before {
+  border-top: none;
+}
