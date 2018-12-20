@@ -5,7 +5,7 @@
     </top-header>
 
     <div class='loginBox'>
-      <img :src="logoImg" alt="">
+      <!-- <img :src="logoImg" alt=""> -->
         </div>
 
       <div class="inputBox">
@@ -36,7 +36,7 @@ export default {
   name: "login",
   data() {
     return {
-      logoImg: require("../../assets/loginLogo.png"),
+      // logoImg: require("../../assets/loginLogo.png"),
       username: "",
       pwd: "",
       userAgree: false

@@ -5,7 +5,7 @@
     </top-header>
 
     <div class='loginBox'>
-      <img :src="logoImg" alt="">
+      <!-- <img :src="logoImg" alt=""> -->
     </div>
 
       <div class="inputBox">
@@ -37,9 +37,6 @@
         <agree :agree='userAgree' @agreeChange='getAgreeVal'></agree>
       </div>
 
-      <!-- <div class="problem">
-        遇见问题
-      </div> -->
 
     </div>
 </template>
@@ -54,7 +51,7 @@ export default {
   },
   data() {
     return {
-      logoImg: require("../../assets/loginLogo.png"),
+      // logoImg: require("../../assets/loginLogo.png"),
       sendFlag: false,
       userAgree: true,
       qid: '',

@@ -1,14 +1,10 @@
 /**
- * 配置文件
- * @author JC
+ * 环境的切换
+ * @author lch
  */
 
 const config = window.urlConfig;
 
-/**
- * 环境的切换
- * @author lch
- */
 
 if (process.env.NODE_ENV == 'development') { //开发环境   
     config.moni.baseUrl = 'http://192.168.1.111:9200'; //打包前使用的url

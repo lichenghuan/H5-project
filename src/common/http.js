@@ -23,9 +23,9 @@ function Alert(str) {
 
 function detectionCode(res) {
     switch (res.code || res.status) {
-        // case 400:
-        //     Alert('错误请求')
-        //     break
+        case 400:
+            Alert('错误请求');
+            break
         case 401:
             Alert('未授权,请重新登录')
             store.commit('CLEAR_ALL');
