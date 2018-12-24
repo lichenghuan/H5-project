@@ -24,7 +24,7 @@
       <div class="assetsTop">
         <div class="assetTopTitle">钱包</div>
         <div class="topMoney">
-          <span>0</span>
+          <span>{{10241024 | money }}</span>
         </div>
       </div>
     </div>

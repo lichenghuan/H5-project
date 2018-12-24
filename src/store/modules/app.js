@@ -1,6 +1,5 @@
 import util from '../../common/util';
 import { jCookie, jLocalStorage, jSession } from '../../utils/storage'
-
 export default {
   state: {
     fullLoadMore: false, //上拉加载 loadMore
